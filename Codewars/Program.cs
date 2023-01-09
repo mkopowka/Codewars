@@ -2,3 +2,7 @@
 using Codewars;
 
 Console.WriteLine("Hello, World!");
+
+CheckIsTriange checkIsTriange= new CheckIsTriange();
+
+checkIsTriange.IsTriangle(1, 2, 4);
