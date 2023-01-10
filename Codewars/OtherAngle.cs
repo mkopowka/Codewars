@@ -8,7 +8,7 @@ namespace Codewars
 {
     internal class OtherAngle
     {
-        public int OtherAngle(int a, int b)
+        public int OtherAnglez(int a, int b)
         {
             int c = 180 - (a + b);
 
