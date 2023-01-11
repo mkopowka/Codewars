@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Codewars
 {
-    internal class СenturyFromYearz
+    internal class СenturyFromYear
     {
-        public static int СenturyFromYear(int year)
+        public int СenturyFromYears(int year)
         {
             int century = year / 100;
             year %= 100;
