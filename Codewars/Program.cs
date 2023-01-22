@@ -8,6 +8,8 @@ CheckIsSquare checkIsSquare = new CheckIsSquare();
 MinMax minMax = new MinMax();
 СenturyFromYear сenturyFromYear = new СenturyFromYear();
 ValidatePin validatePin = new ValidatePin();
+Xoxo xoxo = new Xoxo();
+xoxo.XO("xo");
 validatePin.ValidatePinz("-1234");
 checkIsTriange.IsTriangle(1, 2, 4);
 checkIsSquare.IsSquare(5);
