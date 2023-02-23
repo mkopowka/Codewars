@@ -15,5 +15,9 @@ namespace Codewars
             else
                 return false;
         }
+        public static bool CheckForFFactor(int num, int factor)
+        {
+            return num % factor == 0;
+        }
     }
 }
