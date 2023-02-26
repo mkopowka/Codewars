@@ -8,5 +8,9 @@ namespace Codewars
 {
     internal class NumberToStrings
     {
+        public static string NumberToString(int num)
+        {
+            return num.ToString();
+  }
     }
 }
