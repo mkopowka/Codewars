@@ -10,7 +10,10 @@ namespace Codewars
     {
         public static bool IsPangram(string str)
         {
-            return str.ToLower().Where(ch => Char.IsLetter(ch)).GroupBy(ch => ch).Count() == 26;
+            int a = str.ToLower().Where(ch => Char.IsLetter(ch)).GroupBy(ch => ch).Count();
+            if (a == 26) return true;
+            else
+                return false;
         }
     }
 }
