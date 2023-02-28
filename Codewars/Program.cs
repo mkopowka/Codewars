@@ -11,6 +11,7 @@ ValidatePin validatePin = new ValidatePin();
 Xoxo xoxo = new Xoxo();
 Summation sum= new Summation();
 SetAlarm alarm= new SetAlarm();
+RentalCarCosts rs= new RentalCarCosts();
 xoxo.XO("xo");
 validatePin.ValidatePinz("-1234");
 checkIsTriange.IsTriangle(1, 2, 4);
@@ -19,4 +20,5 @@ minMax.Min(new[] { -32, 42, 2, 6, 7, 95 });
 сenturyFromYear.СenturyFromYears(1902);
 sum.summation(5);
 alarm.SetAlarms(true, true);
+rs.RentalCarCost(7);
 
