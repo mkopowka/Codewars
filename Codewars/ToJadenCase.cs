@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace Codewars
 {
-    internal static class ToJadenCase
+    internal class ToJadenCase
     { 
-        public string ToJadenCases(this string phrase)
+        public string ToJadenCases(string phrase)
         {
             return CultureInfo.CurrentCulture.TextInfo.ToTitleCase(phrase);
         }
