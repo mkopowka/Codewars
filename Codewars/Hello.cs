@@ -8,5 +8,9 @@ namespace Codewars
 {
     internal class Hello
     {
+        public static string SayHello(string name)
+        {
+            return "Hello, " + name;
+         }
     }
 }
