@@ -8,5 +8,9 @@ namespace Codewars
 {
     internal class Opposites
     {
+        public static int Opposite(int number)
+        {
+           return -number;
+        }
     }
 }
