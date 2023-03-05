@@ -8,5 +8,10 @@ namespace Codewars
 {
     internal class NoSpaces
     {
+        public static string NoSpace(string input)
+        {
+
+            return input.Replace(" ", "");
+        }
     }
 }
