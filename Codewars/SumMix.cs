@@ -11,19 +11,7 @@ namespace Codewars
     {
         public static int SumMixs(object[] x)
         {
-            int total = 0;
-            foreach (object item in x)
-            {
-                if (item is int)
-                {
-                    total += (int)item;
-                }
-                else if (item is string && int.TryParse((string)item, out int intValue))
-                {
-                    total += intValue;
-                }
-            }
-            return total;
+          return x.Sum(Convert.ToInt32);
         }
     }
 }
