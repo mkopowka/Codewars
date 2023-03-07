@@ -8,5 +8,10 @@ namespace Codewars
 {
     internal class FindSmallestInts
     {
+
+        public static int FindSmallestInt(int[] args)
+        {
+            return args.Min();
+        }
     }
 }
