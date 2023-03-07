@@ -8,5 +8,9 @@ namespace Codewars
 {
     internal class DoubleIntegers
     {
+        public static int DoubleInteger(int n)
+        {
+            return n * 2;
+        }
     }
 }
