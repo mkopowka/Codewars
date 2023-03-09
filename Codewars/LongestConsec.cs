@@ -8,7 +8,7 @@ namespace Codewars
 {
     internal class LongestConsec
     {
-        public static string LongestConsec(string[] strarr, int k)
+        public static string LongestConsecs(string[] strarr, int k)
         {
 
             return "";
