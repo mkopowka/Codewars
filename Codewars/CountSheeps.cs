@@ -8,5 +8,15 @@ namespace Codewars
 {
     internal class CountSheeps
     {
+        public static string CountSheep(int n)
+        {
+            string result = "";
+            for(int i = 1; i <= n; i++)
+            {
+                result += i.ToString() + " sheep...";
+            }
+
+            return result;
+        }
     }
 }
