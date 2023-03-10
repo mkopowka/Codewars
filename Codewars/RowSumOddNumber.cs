@@ -10,15 +10,8 @@ namespace Codewars
     {
         public static long RowSumOddNumbers(long n)
         {
-            
-            long firstNumber = (n * (n - 1)) + 1;
-            long sum = 0;
-            for (int i = 0; i < n; i++)
-            {
-                sum += firstNumber + (2 * i);
-            }
 
-            return sum;
+            return n * n * n;
         }
     }
 }
