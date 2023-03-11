@@ -10,11 +10,16 @@ namespace Codewars
     {
         public bool ValidatePinz(string pin)
         {
-            int parse = 0;
-            if (pin.Length == 4 || pin.Length == 6)
-            return int.TryParse(pin,out parse);
-                else
-            return false;
+            if (pin.Length != 4 && pin.Length != 6)
+                return false;
+
+            foreach (char c in pin) 
+            {
+                if (!char.IsDigit(c))
+                    return false;
+            }
+
+            return true;
         }
     }
 }
