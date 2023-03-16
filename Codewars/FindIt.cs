@@ -10,23 +10,19 @@ namespace Codewars
     {
         public static int find_it(int[] seq)
         {
-            var dictionary = new Dictionary<int, int>();
-            for (int i = 0; i < seq.Length; i++)
+            foreach (int number in seq)
             {
-                if (dictionary.ContainsKey(seq[i]))
+                int count = 0;
+                foreach (int num in seq)
                 {
-                    dictionary[seq[i]]++;
+                    if (num == number)
+                    {
+                        count++;
+                    }
                 }
-                else
+                if (count % 2 != 0) 
                 {
-                    dictionary[seq[i]] = 1;
-                }
-            }
-            foreach (var item in dictionary)
-            {
-                if (item.Value % 2 != 0)
-                {
-                    return item.Key;
+                    return number;
                 }
             }
             return -1;
