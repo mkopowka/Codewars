@@ -8,5 +8,10 @@ namespace Codewars
 {
     internal class RemoveUrlAnchors
     {
+        public static string RemoveUrlAnchor(string url)
+        {
+            string[] parts = url.Split('#');
+            return parts[0];
+        }
     }
 }
