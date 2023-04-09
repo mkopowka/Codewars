@@ -11,19 +11,8 @@ namespace Codewars
         public static int RoundToNextMultipleOf5(int num)
         {
 
-            int remainder = num % 5;
-            if (remainder == 0) // liczba jest już wielokrotnością 5
-            {
-                return num;
-            }
-            else if (num >= 0) // liczba dodatnia
-            {
-                return num  + (5 - remainder);
-            }
-            else // liczba ujemna
-            {
-                return num - remainder;
-            }
+            while (n % 5 != 0) n++;
+            return n;
         }
     }
 }
