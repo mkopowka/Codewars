@@ -10,7 +10,29 @@ namespace Codewars
     {
         public static int DuplicateCount(string str)
         {
-            return -1;
+            Dictionary<char, int> charCounts = new Dictionary<char, int>();
+            int repeatedCount = 0;
+
+            foreach (char c in str.ToLower())
+            {
+                if (char.IsLetterOrDigit(c))
+                {
+                    if (charCounts.ContainsKey(c))
+                    {
+                        charCounts[c]++;
+                        if (charCounts[c] == 2) // Count only characters that occur more than once
+                        {
+                            repeatedCount++;
+                        }
+                    }
+                    else
+                    {
+                        charCounts[c] = 1;
+                    }
+                }
+            }
+
+            return repeatedCount;
         }
     }
 }
