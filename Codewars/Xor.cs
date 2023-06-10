@@ -8,5 +8,9 @@ namespace Codewars
 {
     internal class Xor
     {
+        public static bool Xors(bool a, bool b)
+        {
+            return (a && !b) || (!a && b);
+        }
     }
 }
