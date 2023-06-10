@@ -8,5 +8,9 @@ namespace Codewars
 {
     internal class Gimme
     {
+        public static int Gimmes(double[] inputArray)
+        {
+            return Array.IndexOf(inputArray, inputArray.OrderBy(x => x).ToArray()[1]);
+        }
     }
 }
