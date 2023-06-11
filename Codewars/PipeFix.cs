@@ -11,7 +11,7 @@ namespace Codewars
         public static List<int> PipeFixer(List<int> numbers)
         {
             List<int> result = new List<int>();
-            for (int i = numbers.FirstOrDefault(); i < numbers.LastOrDefault()+!; i++) 
+            for (int i = numbers.FirstOrDefault(); i < numbers.LastOrDefault()+1; i++) 
             {
                 result.Add(i);
             }
