@@ -8,5 +8,16 @@ namespace Codewars
 {
     internal class ChromosomeCheckXY
     {
+        public static string ChromosomeCheck(string sperm)
+        {
+            if (sperm.Contains("Y"))
+            {
+                return "Congratulations! You're going to have a son.";
+            }
+            else
+            {
+                return "Congratulations! You're going to have a daughter.";
+            }
+        }
     }
 }
