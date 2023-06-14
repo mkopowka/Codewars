@@ -8,5 +8,19 @@ namespace Codewars
 {
     internal class SumOfIntegerss
     {
+
+        public static int SumOfIntegers(int a, int b)
+        {
+            int sum = 0;
+            int start = Math.Min(a, b);
+            int end = Math.Max(a, b);
+
+            for (int i = start; i <= end; i++)
+            {
+                sum += i;
+            }
+
+            return sum;
+        }
     }
 }
