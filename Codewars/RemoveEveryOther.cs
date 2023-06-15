@@ -8,7 +8,7 @@ namespace Codewars
 {
     internal class RemoveEveryOther
     {
-        public static object[] RemoveEveryOther(object[] arr)
+        public static object[] RemoveEveryOthers(object[] arr)
         {
             List<object> resultList = new List<object>();
 
