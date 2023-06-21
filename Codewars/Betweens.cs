@@ -10,15 +10,7 @@ namespace Codewars
     {
         public static int[] Between(int a, int b)
         {
-            int length = b - a + 1;
-            int[] result = new int[length];
-
-            for (int i = 0; i < length; i++)
-            {
-                result[i] = a + i;
-            }
-
-            return result;
+            return Enumerable.Range(a, b - a + 1).ToArray();
         }
     }
 }
