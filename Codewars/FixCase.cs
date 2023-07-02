@@ -10,31 +10,7 @@ namespace Codewars
     {
         public static string Solve(string input)
         {
-            int uppercaseCount = 0;
-            int lowercaseCount = 0;
-
-            // Count the number of uppercase and lowercase letters
-            foreach (char c in input)
-            {
-                if (char.IsUpper(c))
-                {
-                    uppercaseCount++;
-                }
-                else if (char.IsLower(c))
-                {
-                    lowercaseCount++;
-                }
-            }
-
-            // Convert the string based on the conditions
-            if (uppercaseCount > lowercaseCount)
-            {
-                return input.ToUpper();
-            }
-            else
-            {
-                return input.ToLower();
-            }
+            return s.Count(char.IsUpper) > s.Count(char.IsLower) ? s.ToUpper() : s.ToLower();
         }
     }
 }
