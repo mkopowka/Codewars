@@ -8,7 +8,7 @@ namespace Codewars
 {
     internal class Array
     {
-        public static string Arrays(string s)
+        public static string? Arrays(string s)
         {
 
             if (string.IsNullOrEmpty(s))
