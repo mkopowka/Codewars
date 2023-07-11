@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Codewars
 {
-    internal class Array
+    internal class Arra
     {
-        public static string? Arrays(string s)
+        public static string? Arrayse(string s)
         {
 
             if (string.IsNullOrEmpty(s))
