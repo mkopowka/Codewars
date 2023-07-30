@@ -10,17 +10,7 @@ namespace Codewars
     {
         public static int CountSheeps(bool[] sheeps)
         {
-            int count = 0;
-
-            for (int i = 0; i < sheeps.Length; i++)
-            {
-                if (sheeps[i] == true)
-                {
-                    count++;
-                }
-            }
-
-            return count;
+            return sheeps.Count(s => s);
         }
     }
 }
