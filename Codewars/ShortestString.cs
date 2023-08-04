@@ -10,21 +10,7 @@ namespace Codewars
     {
         public static int FindShort(string s)
         {
-            string[] words = s.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
-
-
-            int shortestLength = words[0].Length;
-
-            for (int i = 1; i < words.Length; i++)
-            {
-                int wordLength = words[i].Length;
-                if (wordLength < shortestLength)
-                {
-                    shortestLength = wordLength;
-                }
-            }
-
-            return shortestLength;
+            return s.Split(' ').Min(x => x.Length);
         }
     }
 }
