@@ -28,4 +28,5 @@ namespace Codewars
                 return -1;
             }
         }
+    }
 }
