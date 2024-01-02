@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace Codewars
@@ -10,15 +11,12 @@ namespace Codewars
     {
         public static string[] StringToArray(string str)
         {
-            if (string.IsNullOrEmpty(str))
-            {
-                return new string[0];
-            }
-            else
-            {
-                string[] words = str.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
-                return words.Length == 0 ? words : words.Select(w => w.Trim()).ToArray();
-            }
+            string[] words = Regex.Split(str, @"\W+");
+
+
+            words = words.Where(s => !string.IsNullOrEmpty(s)).ToArray();
+
+            return words;
         }
     }
 }
