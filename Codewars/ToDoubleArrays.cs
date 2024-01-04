@@ -21,16 +21,7 @@ namespace Codewars
         */
         public static double[] ToDoubleArray(string[] stringArray)
         {
-            double[] doubleArray = new double[stringArray.Length];
-
-            for (int i = 0; i < stringArray.Length; i++)
-            {
-                if (double.TryParse(stringArray[i], out double result))
-                {
-                    doubleArray[i] = result;
-                }
-            }
-            return doubleArray;
+            return stringArray.Select(x => Double.Parse(x)).ToArray();
         }
     }
 }
