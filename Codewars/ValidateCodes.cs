@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace Codewars
@@ -13,8 +14,7 @@ namespace Codewars
     {
         public static bool ValidateCode(string code)
         {
-            if (code.StartsWith("1") || code.StartsWith("2") || code.StartsWith("3")) return true;
-            else return false;
+            return Regex.IsMatch(code,"^[123]");
         }
     }
 }
