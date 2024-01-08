@@ -23,8 +23,17 @@ namespace Codewars
     {
         public static string PrintArray(object[] array)
         {
-            string result = string.Join(",", array.Select(element => element.ToString()));
-
+            string result = string.Join(",", array.Select(element =>
+            {
+                if (element is object[] innerArray)
+                {
+                    return string.Join(",", innerArray.Select(innerElement => innerElement.ToString()));
+                }
+                else
+                {
+                    return element.ToString();
+                }
+            }));
             return result;
         }
     }
