@@ -8,17 +8,31 @@ namespace Codewars
 {
     public class MinMax
     {
-        public int Min(int[] list)
+        /* Write a function that returns both the minimum and maximum number of the given list/array. */
+        public static int[] minMaxs(int[] lst)
         {
+            if (lst == null || lst.Length == 0)
+            {
+                return null;
+            }
 
-            return list.Min();
-        }
+            int min = lst[0];
+            int max = lst[0];
 
-        public int Max(int[] list)
-        {
+            for (int i = 1; i < lst.Length; i++)
+            {
+                if (lst[i] < min)
+                {
+                    min = lst[i];
+                }
 
+                if (lst[i] > max)
+                {
+                    max = lst[i];
+                }
+            }
 
-            return list.Max();
+            return new int[] { min, max };
         }
     }
 }
