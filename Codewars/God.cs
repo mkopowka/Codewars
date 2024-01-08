@@ -13,46 +13,15 @@ namespace Codewars
     */
     public class God
     {
-
         public static Human[] Create()
         {
-            Man adam = new Man("Adam");
-            Woman eve = new Woman("Eve");
-
-            Human[] humans = new Human[] { adam, eve };
-            return humans;
-        }
-
-    }
-    public class Human
-    {
-        public string Name { get; set; }
-        public Human(string name)
-        {
-            Name = name;
-        }
-    }
-    public class Man : Human
-    {
-        public Man(string name) : base(name)
-        {
-        }
-
-        public string ManName(string name)
-        {
-            return name;
-        }
-    }
-    public class Woman : Human
-    {
-        public Woman(string name) : base(name)
-        {
-        }
-
-        public string WomanName(string name)
-        {
-            return name;
+            return new Human[] { new Man(), new Woman() };
         }
     }
 
+    public class Human { }
+
+    public class Man : Human { }
+
+    public class Woman : Human { }
 }
