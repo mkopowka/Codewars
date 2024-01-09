@@ -11,7 +11,7 @@ namespace Codewars
     {
         public static int GetASCIIs(char c)
         {
-            return Convert.ToInt32(c);
+            return c;
         }
     }
 }
