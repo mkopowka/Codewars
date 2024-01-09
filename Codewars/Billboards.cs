@@ -11,6 +11,7 @@ namespace Codewars
         public static double Billboard(string name, double price = 30)
         {
             //TODO
+            return 0.0;
         }
     }
 }
