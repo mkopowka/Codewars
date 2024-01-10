@@ -7,16 +7,14 @@ using System.Threading.Tasks;
 
 namespace Codewars
 {
+    /* Write a function to split a string and convert it into an array of words. */
     internal class StringToArrays
     {
         public static string[] StringToArray(string str)
         {
-            string[] words = Regex.Split(str, @"\W+");
+            string[] wordsArray = str.Split(' ');
 
-
-            words = words.Where(s => !string.IsNullOrEmpty(s)).ToArray();
-
-            return words;
+            return wordsArray;
         }
     }
 }
