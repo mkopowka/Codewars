@@ -24,5 +24,4 @@ namespace Codewars
                 return "Error";
         }
     }
-    }
 }
