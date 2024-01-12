@@ -55,3 +55,4 @@ sortMyStrings.SortMyString("CodeWars");
 mergeArrayz.MergeArrays(new[] { 62, 10, -26 }, new int[] { -87, -68, 8, 15, 18, 22, 26, 73, 99 });
 //websitez.AllSites("codewars");
 alternate.alternateCase("ABC");
+Digit.Digits("4");
