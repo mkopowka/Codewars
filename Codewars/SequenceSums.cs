@@ -17,21 +17,14 @@ namespace Codewars
     {
         public static int SequenceSum(int start, int end, int step)
         {
-            if (start > end)
+            int sum = 0;
+
+            for (int i = start; i <= end; i += step)
             {
-                return 0;
+                sum += i;
             }
 
-            int sumResult = 0;
-            int currentValue = start;
-
-            while (currentValue <= end)
-            {
-                sumResult += currentValue;
-                currentValue += step;
-            }
-
-            return sumResult;
+            return sum;
         }
     }
 }
