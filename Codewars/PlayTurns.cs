@@ -15,12 +15,12 @@ namespace Codewars
 
         public static void PlayTurn()
         {
-            RollDice();
+           /* RollDice();
             Move();
             Combat();
             GetCoins();
             BuyHealth();
-            PrintStatus();
+            PrintStatus(); */
         }
         static void main()
         {
