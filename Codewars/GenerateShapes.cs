@@ -11,21 +11,7 @@ namespace Codewars
     {
         public static string GenerateShape(int n)
         {
-            System.Text.StringBuilder result = new System.Text.StringBuilder();
-
-            for (int i = 0; i < n; i++)
-            {
-                for (int j = 0; j < n; j++)
-                {
-                    result.Append("+");
-                }
-                if (i < n - 1)
-                {
-                    result.AppendLine();
-                }
-            }
-
-            return result.ToString();
+            return string.Join("\n", Enumerable.Repeat("".PadLeft(n, '+'), n));
         }
     }
 }
