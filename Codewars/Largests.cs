@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Codewars
 {
+    /* Write a program that outputs the top n elements from a list. */
     internal class Largests
     {
         public static List<int> Largest(int n, List<int> xs)
