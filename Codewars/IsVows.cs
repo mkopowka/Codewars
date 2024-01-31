@@ -18,4 +18,5 @@ namespace Codewars
         {
             return a.Select(x => "aeiou".Contains(Convert.ToChar(x)) ? Convert.ToChar(x).ToString() : x).ToArray();
         }
+    }
 }
