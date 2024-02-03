@@ -32,7 +32,7 @@ namespace Codewars
         {
             language = language.ToLower();
 
-            if (greetings.TryGetValue(language, out string greeting))
+            if (greetings.TryGetValue(language, out var greeting))
             {
                 return greeting;
             }

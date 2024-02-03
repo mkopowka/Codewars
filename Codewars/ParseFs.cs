@@ -9,7 +9,7 @@ namespace Codewars
     internal class ParseFs
         /* Write function parseFloat which takes an input and returns a number or Nothing if conversion is not possible. */
     {
-        public static double? ParseF(object s = null)
+        public static double? ParseF(object? s = null)
         {
             if (s != null && double.TryParse(s.ToString(), out double result))
             {
