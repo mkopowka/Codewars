@@ -10,11 +10,6 @@ namespace Codewars
     {
         public static string print(int n)
         {
-            if (n % 2 == 0 || n < 0)
-            {
-                return null;
-            }
-
             StringBuilder diamond = new StringBuilder();
 
             // Upper half of the diamond
